@@ -3,36 +3,103 @@
 }
 
 .App-logo {
+  animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-bottom: 2rem;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.row:nth-child(3n+1) .field { border-bottom: 0.19rem solid #000; }
+.row:last-child .field { border-bottom: 0.06rem solid #ccc; }
+
+.field {
+  width: 3rem;
+  height: 3rem;
+  font-size: 2rem;
+  text-align:center;
+  color: #888;
+  
 }
+h2{
+  text-align: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 1rem 0;
+  margin: 0;
+  background-color: #78c4d4 ;
+}
+.field[readonly] {
+  color: #222;
+}
+.con {
+  background-color: #78c4d4;
+  margin-top: 0;
+}
+.field {
+	border: 1px solid #ccc;
+	outline: none;
+}
+
+.field:nth-child(3n) { border-right: 0.19rem solid #000; }
+.field:last-child { border-right: 0.06rem solid #ccc; }
+.field:focus { background: #efefef; }
+
+.copy{
+  background-color: #282c34;
+  margin-top: 0;
+  margin-bottom: auto;
+  height: 4rem;
+  text-align:center;
+}
+.timer{
+  background-color: #78c4d4;
+}
+button {
+	margin-top: 30px;
+	display: inline-block;
+	font-size: 22px;
+	border: 1px solid #282c34;
+	background-color: #78c4d4;
+	border-radius: 4px;
+	padding: 10px 30px;
+	cursor: pointer;
+	transition: all 250ms ease-in;
+}
+
+button:hover {
+	background: #282c34;
+	padding: 10px 60px;
+	color: #fff;
+}
+
+@media (max-width: 700px) {
+
+	.field {
+		width: 9vw;
+		height: 9vw;
+		font-size: 1.6em;
+	}}
+@media (max-width: 450px) {
+
+    .field {
+      width: 8vw;
+      height: 8vw;
+      font-size: 1.6em;
+      font-size: 1.3rem;
+    }
+}
+

@@ -1,0 +1,47 @@
+.background{
+    background: linear-gradient(#290149, #78c4d4);
+    outline: 5px solid #060a0e;
+    height: auto;
+}
+.container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+    width: 900px;
+    margin: 0 auto;
+    padding:  60px 0 150px 0;
+}
+.heading{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size:40px;
+    letter-spacing: 0.3rem;
+}
+
+.instructions{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    background-color: #e4fbff;
+    border-radius: 30px;
+    padding: 0 20px 10px 20px;
+    box-shadow: 0px 0px 23px -3px #060a0e;
+}
+.instructions h5{
+    text-align: center;
+}
+.instructions h4,ul{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;  
+}
+
+@media (max-width:900px){
+    .container{
+        width: 90%;
+        margin: 0 5%;
+    }
+}
+
+/*Animations*/
