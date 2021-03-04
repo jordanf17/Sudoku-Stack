@@ -1,5 +1,4 @@
 import React,{ Component} from "react";
-import generator from "sudoku";
 import { generateSudoku, checkSolution, shareUrl,checkInstance } from "./lib/sudoku";
 import produce from "immer";
 import SudokuBoard from "./components/SudokuBoard";
